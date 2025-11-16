@@ -106,6 +106,49 @@
         "type": "integer",
         "format": "int32"
       },
+      "FoodPortion": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double"
+          },
+          "unit": {
+            "type": "string",
+            "nullable": true
+          },
+          "calories": {
+            "type": "number",
+            "format": "double"
+          },
+          "proteinGrams": {
+            "type": "number",
+            "format": "double"
+          },
+          "carbsGrams": {
+            "type": "number",
+            "format": "double"
+          },
+          "fatGrams": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Goal": {
+        "enum": [
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
       "MacronutrientSuggestion": {
         "type": "object",
         "properties": {
@@ -140,6 +183,43 @@
         },
         "additionalProperties": false
       },
+      "MealPlanItem": {
+        "type": "object",
+        "properties": {
+          "mealName": {
+            "type": "string",
+            "nullable": true
+          },
+          "calories": {
+            "type": "number",
+            "format": "double"
+          },
+          "proteinGrams": {
+            "type": "number",
+            "format": "double"
+          },
+          "carbsGrams": {
+            "type": "number",
+            "format": "double"
+          },
+          "fatGrams": {
+            "type": "number",
+            "format": "double"
+          },
+          "suggestion": {
+            "type": "string",
+            "nullable": true
+          },
+          "foods": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FoodPortion"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "NutritionRequest": {
         "required": [
           "activityLevel",
@@ -151,7 +231,7 @@
         "type": "object",
         "properties": {
           "age": {
-            "maximum": 100,
+            "maximum": 120,
             "minimum": 10,
             "type": "integer",
             "format": "int32"
@@ -174,12 +254,15 @@
           "activityLevel": {
             "$ref": "#/components/schemas/ActivityLevel"
           },
-          "deficitPercent": {
+          "adjustmentPercent": {
             "maximum": 50,
             "minimum": 0,
             "type": "number",
             "format": "double",
             "nullable": true
+          },
+          "goal": {
+            "$ref": "#/components/schemas/Goal"
           }
         },
         "additionalProperties": false
@@ -201,6 +284,13 @@
           },
           "suggestion": {
             "$ref": "#/components/schemas/MacronutrientSuggestion"
+          },
+          "dailyMeals": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MealPlanItem"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false

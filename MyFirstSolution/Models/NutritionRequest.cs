@@ -17,10 +17,17 @@ namespace MyFirstSolution.Models
         ExtraActive = 5      // very hard exercise or physical job
     }
 
+    public enum Goal
+    {
+        Lose = 1,
+        Maintain = 2,
+        Gain = 3
+    }
+
     public class NutritionRequest
     {
         [Required]
-        [Range(10, 100)]
+        [Range(10, 120)]
         public int Age { get; set; }
 
         [Required]
@@ -37,8 +44,11 @@ namespace MyFirstSolution.Models
         [Required]
         public ActivityLevel ActivityLevel { get; set; }
 
-        // Optional: desired deficit percentage (0-50). Default 20% when not provided or 0.
-        [Range(0, 50)]
-        public double? DeficitPercent { get; set; }
+        // Optional: desired deficit or surplus percentage (0-50). Default 20% deficit for Lose, 10% surplus for Gain.
+        [Range(0,50)]
+        public double? AdjustmentPercent { get; set; }
+
+        // Goal: Lose, Maintain, Gain (affects calculation and suggestions)
+        public Goal Goal { get; set; } = Goal.Lose;
     }
 }

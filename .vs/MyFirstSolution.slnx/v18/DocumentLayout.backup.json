@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Felipe\\source\\repos\\MyFirstSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|c:\\users\\felipe\\source\\repos\\myfirstsolution\\myfirstsolution\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|solutionrelative:myfirstsolution\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|c:\\users\\felipe\\source\\repos\\myfirstsolution\\myfirstsolution\\controllers\\nutritioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|solutionrelative:myfirstsolution\\controllers\\nutritioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|c:\\users\\felipe\\source\\repos\\myfirstsolution\\myfirstsolution\\models\\nutritionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|solutionrelative:myfirstsolution\\models\\nutritionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|c:\\users\\felipe\\source\\repos\\myfirstsolution\\myfirstsolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|solutionrelative:myfirstsolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|c:\\users\\felipe\\source\\repos\\myfirstsolution\\myfirstsolution\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|solutionrelative:myfirstsolution\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|c:\\users\\felipe\\source\\repos\\myfirstsolution\\myfirstsolution\\models\\nutritionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|solutionrelative:myfirstsolution\\models\\nutritionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|c:\\users\\felipe\\source\\repos\\myfirstsolution\\myfirstsolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|solutionrelative:myfirstsolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3699BB9-1C39-59DF-D838-60F9067F4C6B}|MyFirstSolution\\MyFirstSolution.csproj|c:\\users\\felipe\\source\\repos\\myfirstsolution\\myfirstsolution\\myfirstsolution.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -43,19 +39,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "NutritionController.cs",
+              "DocumentMoniker": "C:\\Users\\Felipe\\source\\repos\\MyFirstSolution\\MyFirstSolution\\Controllers\\NutritionController.cs",
+              "RelativeDocumentMoniker": "MyFirstSolution\\Controllers\\NutritionController.cs",
+              "ToolTip": "C:\\Users\\Felipe\\source\\repos\\MyFirstSolution\\MyFirstSolution\\Controllers\\NutritionController.cs",
+              "RelativeToolTip": "MyFirstSolution\\Controllers\\NutritionController.cs",
+              "ViewState": "AgIAABQBAAAAAAAAAAArwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T22:54:43.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\Felipe\\source\\repos\\MyFirstSolution\\MyFirstSolution\\Dockerfile",
               "RelativeDocumentMoniker": "MyFirstSolution\\Dockerfile",
               "ToolTip": "C:\\Users\\Felipe\\source\\repos\\MyFirstSolution\\MyFirstSolution\\Dockerfile",
               "RelativeToolTip": "MyFirstSolution\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-11-16T21:42:20.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Felipe\\source\\repos\\MyFirstSolution\\MyFirstSolution\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "MyFirstSolution\\Properties\\launchSettings.json",
@@ -67,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "MyFirstSolution.csproj",
               "DocumentMoniker": "C:\\Users\\Felipe\\source\\repos\\MyFirstSolution\\MyFirstSolution\\MyFirstSolution.csproj",
               "RelativeDocumentMoniker": "MyFirstSolution\\MyFirstSolution.csproj",
@@ -79,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Felipe\\source\\repos\\MyFirstSolution\\MyFirstSolution\\Program.cs",
               "RelativeDocumentMoniker": "MyFirstSolution\\Program.cs",
@@ -87,7 +96,8 @@
               "RelativeToolTip": "MyFirstSolution\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T13:07:23.211Z"
+              "WhenOpened": "2025-11-15T13:07:23.211Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -97,33 +107,10 @@
               "RelativeDocumentMoniker": "MyFirstSolution\\Models\\NutritionResponse.cs",
               "ToolTip": "C:\\Users\\Felipe\\source\\repos\\MyFirstSolution\\MyFirstSolution\\Models\\NutritionResponse.cs",
               "RelativeToolTip": "MyFirstSolution\\Models\\NutritionResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAlwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T13:04:24.436Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NutritionController.cs",
-              "DocumentMoniker": "C:\\Users\\Felipe\\source\\repos\\MyFirstSolution\\MyFirstSolution\\Controllers\\NutritionController.cs",
-              "RelativeDocumentMoniker": "MyFirstSolution\\Controllers\\NutritionController.cs",
-              "ToolTip": "C:\\Users\\Felipe\\source\\repos\\MyFirstSolution\\MyFirstSolution\\Controllers\\NutritionController.cs",
-              "RelativeToolTip": "MyFirstSolution\\Controllers\\NutritionController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T13:04:38.541Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NutritionRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Felipe\\source\\repos\\MyFirstSolution\\MyFirstSolution\\Models\\NutritionRequest.cs",
-              "RelativeDocumentMoniker": "MyFirstSolution\\Models\\NutritionRequest.cs",
-              "ToolTip": "C:\\Users\\Felipe\\source\\repos\\MyFirstSolution\\MyFirstSolution\\Models\\NutritionRequest.cs",
-              "RelativeToolTip": "MyFirstSolution\\Models\\NutritionRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T13:22:32.512Z"
+              "WhenOpened": "2025-11-15T13:04:24.436Z",
+              "EditorCaption": ""
             }
           ]
         }

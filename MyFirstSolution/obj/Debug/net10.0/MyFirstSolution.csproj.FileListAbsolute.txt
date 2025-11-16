@@ -35,3 +35,4 @@ C:\Users\Felipe\source\repos\MyFirstSolution\MyFirstSolution\obj\Debug\net10.0\r
 C:\Users\Felipe\source\repos\MyFirstSolution\MyFirstSolution\obj\Debug\net10.0\MyFirstSolution.pdb
 C:\Users\Felipe\source\repos\MyFirstSolution\MyFirstSolution\obj\Debug\net10.0\MyFirstSolution.genruntimeconfig.cache
 C:\Users\Felipe\source\repos\MyFirstSolution\MyFirstSolution\obj\Debug\net10.0\ref\MyFirstSolution.dll
+C:\Users\Felipe\source\repos\MyFirstSolution\MyFirstSolution\obj\Debug\net10.0\MyFirstSolution.sourcelink.json
