@@ -1,0 +1,249 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "MyFirstSolution",
+    "version": "1.0"
+  },
+  "paths": {
+    "/nutrition/calculate": {
+      "post": {
+        "tags": [
+          "Nutrition"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NutritionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NutritionRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NutritionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/NutritionResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NutritionResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NutritionResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ActivityLevel": {
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "MacronutrientSuggestion": {
+        "type": "object",
+        "properties": {
+          "calories": {
+            "type": "number",
+            "format": "double"
+          },
+          "proteinGrams": {
+            "type": "number",
+            "format": "double"
+          },
+          "carbsGrams": {
+            "type": "number",
+            "format": "double"
+          },
+          "fatGrams": {
+            "type": "number",
+            "format": "double"
+          },
+          "proteinPercent": {
+            "type": "number",
+            "format": "double"
+          },
+          "carbsPercent": {
+            "type": "number",
+            "format": "double"
+          },
+          "fatPercent": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "NutritionRequest": {
+        "required": [
+          "activityLevel",
+          "age",
+          "heightCm",
+          "sex",
+          "weightKg"
+        ],
+        "type": "object",
+        "properties": {
+          "age": {
+            "maximum": 100,
+            "minimum": 10,
+            "type": "integer",
+            "format": "int32"
+          },
+          "sex": {
+            "$ref": "#/components/schemas/Sex"
+          },
+          "weightKg": {
+            "maximum": 300,
+            "minimum": 30,
+            "type": "number",
+            "format": "double"
+          },
+          "heightCm": {
+            "maximum": 250,
+            "minimum": 100,
+            "type": "number",
+            "format": "double"
+          },
+          "activityLevel": {
+            "$ref": "#/components/schemas/ActivityLevel"
+          },
+          "deficitPercent": {
+            "maximum": 50,
+            "minimum": 0,
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NutritionResponse": {
+        "type": "object",
+        "properties": {
+          "bmr": {
+            "type": "number",
+            "format": "double"
+          },
+          "tdee": {
+            "type": "number",
+            "format": "double"
+          },
+          "targetCalories": {
+            "type": "number",
+            "format": "double"
+          },
+          "suggestion": {
+            "$ref": "#/components/schemas/MacronutrientSuggestion"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Sex": {
+        "enum": [
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Nutrition"
+    },
+    {
+      "name": "WeatherForecast"
+    }
+  ]
+}
